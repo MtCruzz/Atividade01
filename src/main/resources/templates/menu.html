@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu da alegria</title>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div> 
+        <a onclick= "produto()" href="http://localhost:8080/produto/1">http://localhost:8080/produto/1</a>
+    </div>
+    
+    <div> 
+        <a onclick= "estoque()" href="http://localhost:8080/produtosEmEstoque">http://localhost:8080/produtosEmEstoque</a>
+    </div>
+    
+    <div> 
+        <a onclick= "acima()" href="http://localhost:8080/produtosValorAcima/20">http://localhost:8080/produtosValorAcima/20</a>
+    </div>
+    
+    <div> 
+        <a onclick= "abaixo()" href="http://localhost:8080/produtosValorAbaixo/20">http://localhost:8080/produtosValorAbaixo/20</a>
+    </div>
+
+    <script> 
+    produto()
+        window.open("http://localhost:8080/produto/1");
+
+    estoque()
+        window.open("http://localhost:8080/produtosEmEstoque");
+
+    acima()
+        window.open("http://localhost:8080/produtosValorAcima/20");
+
+    abaixo()
+        window.open("http://localhost:8080/produtosValorAbaixo/20");
+
+    </script>
+
+    
+</body>
+</html>

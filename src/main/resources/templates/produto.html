@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Produto</h1>
+    <div th:if="${produto}">
+        <table>
+            <td th:text="${produto?.codigo}"></td>
+            <td th:text="${produto?.nome}"></td>
+            <td th:text="${produto?.valor}"></td>
+            <td th:text="${produto?.estoque}"></td>
+            <p></p>
+        </table>
+    </div>
+
+    <div th:unless="${produto}">
+        <div>
+            Erro - Produto inexistente
+        </div>
+    </div>
+
+</body>
+</html>
